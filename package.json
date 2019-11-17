@@ -1,0 +1,23 @@
+{
+  "name": "block-it",
+  "version": "1.0.0",
+  "description": "app to mangage time using blocking technique.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mistermask/block-it.git"
+  },
+  "author": "beans.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mistermask/block-it/issues"
+  },
+  "homepage": "https://github.com/mistermask/block-it#readme",
+  "dependencies": {
+    "ejs": "^2.7.2",
+    "express": "^4.17.1"
+  }
+}
