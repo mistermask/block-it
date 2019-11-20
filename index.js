@@ -1,3 +1,6 @@
+//TODO: add input for goal name.
+//TODO: organize code.
+
 var express = require('express')
 var mongodb = require('mongodb')
 
