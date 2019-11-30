@@ -1,5 +1,7 @@
 //TODO: organize code.
-//TODO: make the times clickable to create new goals
+//TODO: make button to create new goals
+//todo: add date menu
+//todo: 
 
 var express = require('express')
 var mongodb = require('mongodb')
@@ -26,7 +28,7 @@ class timestruct {
 
 var randGoal = () => {
     return new goalstruct(
-        Math.round(Math.random() * 100).toString(),
+        Math.round(Math.random() * 1000).toString(),
         new timestruct(Math.round(Math.random() * 12),Math.round(Math.random() * 30),2020,Math.round(Math.random() * 24)),
         new timestruct(Math.round(Math.random() * 12),Math.round(Math.random() * 30),2020,Math.round(Math.random() * 24))
     )
@@ -38,6 +40,7 @@ var times = ['','','','','','','','','','','','','','','','','','','','','','','
 for (let i = 0; i < goals.length; i++) {
     times[goals[i].starttime.mmmm - 1] += ' ' + goals[i].name
     times[goals[i].endtime.mmmm - 1] += ' ' + goals[i].name
+    console.log(goals[i].name + ' ' + (goals[i].starttime.mmmm - 1).toString() + ' ' + (goals[i].endtime.mmmm - 1).toString())
 }
 
 /*var mongoClient = mongodb.connect(url, (err, db) => {
