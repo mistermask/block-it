@@ -40,7 +40,7 @@ var times = ['','','','','','','','','','','','','','','','','','','','','','','
 for (let i = 0; i < goals.length; i++) {
     times[goals[i].starttime.mmmm - 1] += ' ' + goals[i].name
     times[goals[i].endtime.mmmm - 1] += ' ' + goals[i].name
-    console.log(goals[i].name + ' ' + (goals[i].starttime.mmmm - 1).toString() + ' ' + (goals[i].endtime.mmmm - 1).toString())
+    console.log(goals[i].name + ' ' + (goals[i].starttime.mmmm).toString() + ' ' + (goals[i].endtime.mmmm).toString())
 }
 
 /*var mongoClient = mongodb.connect(url, (err, db) => {
